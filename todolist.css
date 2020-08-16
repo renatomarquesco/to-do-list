@@ -1,0 +1,108 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: rgb(221, 231, 231);
+}
+
+#input {
+    width: 300px;
+    max-width: 500px;
+    margin-right: 30px;
+    border: 0.2px rgb(129, 127, 127) solid;
+    border-radius: 05px;
+    padding-left: 10px;
+    height: 43px;
+    font-size: 20px;
+    background: rgb(221, 231, 231);
+
+}
+
+.container {
+    align-items: center;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.newrow {
+    margin-top: 50px;
+    border-bottom: 0.2px solid gray;
+}
+
+.remove {
+    cursor: pointer;
+}
+
+.span {
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #5a5a5a;
+}
+
+#addToDo img{
+    margin-bottom: 1.5%;
+}
+p {
+    font-size: 25px;
+}
+
+#checkbox {
+    border-radius: 50%;
+}
+
+.toggle {
+    background: #fcffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin: 30px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(1, 52, 82);
+    border: 1px solid #58d9dd;
+
+}
+
+.toggle:hover {
+    background: #dbe9e7;
+    transition: ease-in 0.3s 0.2s;
+}
+
+@media(max-width:768px) {
+
+    #input {
+        max-width: 80%;
+        margin-right: 05px;
+    }
+
+    .div-input {
+        text-align: center;
+
+    }
+
+    .span {
+        width: 33px;
+        margin-right: 0px;
+    }
+
+    .toggle {
+        margin: 10px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .div-check {
+        margin-right: 0px;
+    }
+
+    .div-text {
+        padding: 0px;
+    }
+}
