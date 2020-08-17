@@ -135,10 +135,10 @@ $(document).ready(function () {
         var dataId = $(this).data("id");
         if (this.checked) {
             markCompleted($(this).data("id"));
-            $(this).parent().next().css("text-decoration", "line-through")
+            $(this).parent().next().children("p").css("text-decoration", "line-through")
         } else {
             markActive($(this).data("id"))
-            $(this).parent().next().css("text-decoration", "none")
+            $(this).parent().next().children("p").css("text-decoration", "none")
 
         }
     })
@@ -166,7 +166,9 @@ $(document).ready(function () {
                         divCheck.append(checkbox)
                         var divText = $("<div class ='col-lg-7 col-6 text-left div-text'></div>")
                         newdiv.append(divText);
-                        divText.append("<p class = 'text' data-id = '" + task.id + "'>" + task.content + "</p>")
+                        var taskText =$("<p class = 'text' data-id = '" + task.id + "'>" + task.content + "</p>")
+                        divText.append(taskText);
+                        taskText.css("text-decoration", "line-through");
                         var divBtn = $("<div class ='col-lg-2 col-2 div-btn text-right'></div>")
                         newdiv.append(divBtn)
                         var removebtn = $("<img class = 'remove' src='./imgs/excluir-preto.png' width='12px' alt='' data-id =" + task.id + ">")
@@ -202,7 +204,7 @@ $(document).ready(function () {
                         divText.append("<p class = 'text' data-id = '" + task.id + "'>" + task.content + "</p>")
                         var divBtn = $("<div class ='col-lg-2 col-2 div-btn text-right'></div>")
                         newdiv.append(divBtn)
-                        var removebtn = $("<img class = 'remove' src='excluir-preto.png' width='12px' alt='' data-id =" + task.id + ">")
+                        var removebtn = $("<img class = 'remove' src='./imgs/excluir-preto.png' width='12px' alt='' data-id =" + task.id + ">")
                         divBtn.append(removebtn);
                     }
                 })
